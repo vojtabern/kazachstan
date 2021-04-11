@@ -1,0 +1,44 @@
+.obraz{
+  shape-image-threshold: initial;
+  height: 500px !important;
+  width: 100% !important;
+}
+body{
+    background-color: rgb(55, 144, 196) !important;
+}
+.pozadi{
+    background-color: white;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    }
+
+.col-left{
+    margin-top: 25px !important;
+    float: left;
+    margin: 0 auto;
+}
+.col-right{
+    float: right;
+    margin: 0 auto;
+}
+#googleMap{
+    float: right;
+    margin: 0 auto;
+    width:100%;
+    height:400px;
+}
+h1{
+    font-weight: bold;
+    color: yellow;
+    text-align: center;
+    font-family: sans-serif; 
+}
+#leftbg {
+    position: absolute;
+}
+#footer{
+    background-color: brown;
+    color: white;
+}
