@@ -114,6 +114,40 @@
                 <div class="container">
                     <div id="accordianId" role="tablist" aria-multiselectable="true">
                         <div class="card col-centered">
+                            <div class="card-header" role="tab" id="section3HeaderId">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId"
+                                        aria-expanded="true" aria-controls="section3ContentId">
+                                        Zde si poslechni hymnu Kazachstánu
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="section3ContentId" class="collapse in" role="tabpanel"
+                             aria-labelledby="section3HeaderId">
+                                <div class="card-body">
+                                    <ul>
+                                        <audio controls>
+                                           <source src="hymna/Hymna_borat.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                        </audio>
+                                    </ul>
+                                    <p>Jedná se o pravou hymnu kazachstánu?</p>
+                                    <button class="button" id="ano" type="button">ANO</button>
+                                    <button class="button" id="ne" type="button">NE</button>
+                                    <div id="a_ans"></div>
+                                    <div id="n_ans"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+                <div class="container">
+                    <div id="accordianId" role="tablist" aria-multiselectable="true">
+                        <div class="card col-centered">
                             <div class="card-header" role="tab" id="section1HeaderId">
                                 <h5 class="mb-0">
                                     <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId"
