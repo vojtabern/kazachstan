@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Kazachstan_velka_zem</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +13,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="startTime()">
     <img src="img/kazachstan.jpg"
         class="obraz img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
 
@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Úvodní stránka <span class="sr-only">(current)</span></a>
+                    <a class="nav-link js-scroll-trigger" href="#">Úvodní stránka <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -61,8 +61,7 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <h3 id="cas"></h3>
             </form>
         </div>
     </nav>
@@ -86,7 +85,7 @@
                 <ul>
                     <li>
                         <!--<a href="#kazachstandnes"></a>-->
-                        <p> <b>Kazachstán</b> (kazašsky Қазақстан [qɑzɑqˈstɑn]), plným názvem Republika Kazachstán, je
+                        <p class="kokos"> <b>Kazachstán</b> (kazašsky Қазақстан [qɑzɑqˈstɑn]), plným názvem Republika Kazachstán, je
                             stát, který se
                             rozkládá ve střední Asii a malou částí svého území západně od řeky Ural zasahuje též do
                             Evropy. Na
@@ -103,7 +102,7 @@
                     </li>
                     <li>
                         <!--<a href="#kazachstandnes"></a>-->
-                        <p>
+                        <p class="kokos">
                             Území Kazachstánu bylo ve starověku osídleno turkickými kočovníky.
                             Ve 13. století území ovládli Mongolové vedení Čingischánem. Rusové začali kazašskou step
                             postupně ovládat od 18. století.
@@ -123,15 +122,15 @@
                                 </h5>
                             </div>
                             <div id="section3ContentId" class="collapse in" role="tabpanel"
-                             aria-labelledby="section3HeaderId">
+                                aria-labelledby="section3HeaderId">
                                 <div class="card-body">
                                     <ul>
-                                        <audio controls>
-                                           <source src="hymna/Hymna_borat.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
+                                        <audio controls class="zmiz">
+                                            <source src="hymna/Hymna_borat.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
                                         </audio>
                                     </ul>
-                                    <p>Jedná se o pravou hymnu kazachstánu?</p>
+                                    <p class="zmiz">Jedná se o pravou hymnu kazachstánu?</p>
                                     <button class="button" id="ano" type="button">ANO</button>
                                     <button class="button" id="ne" type="button">NE</button>
                                     <div id="a_ans"></div>
@@ -143,7 +142,7 @@
                 </div>
 
 
-                
+
 
                 <div class="container">
                     <div id="accordianId" role="tablist" aria-multiselectable="true">
@@ -209,14 +208,56 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="container">
+                    <div id="accordianId" role="tablist" aria-multiselectable="true">
+                        <div class="card col-centered">
+                            <div class="card-header" role="tab" id="section4HeaderId">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#accordianId" href="#section4ContentId"
+                                        aria-expanded="true" aria-controls="section4ContentId">
+                                        Národní umělec
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="section4ContentId" class="collapse in" role="tabpanel"
+                                aria-labelledby="section1HeaderId">
+                                <div class="card-body">
+                                    Sacha Noam Baron Cohen (* 13. října 1971 Londýn) je anglický komik a herec,
+                                    proslavený svými filmovými rolemi ve filmech Ali G Indahouse, Borat: Nakoukání do
+                                    amerycké kultůry na obědnávku slavnoj kazašskoj národu, Brüno a Diktátor. Tři z
+                                    těchto postav vystupovaly v jeho relaci Da Ali G Show.
+                                    <p>
+                                        Narodil se v Londýně a pochází z ortodoxní židovské rodiny (přesto Židy ve
+                                        svých filmech – kromě mnoha jiných skupin a etnik – zesměšňuje), jeho bratr
+                                        Erran je skladatel a spolupracoval na některých jeho filmech.
+                                    </p>
+                                    <p>Poslední podobný přehmat se stal naposled v roce 2010, když byl označen Borat za
+                                        skutečného reportéra. Sacha tomu sám napomáhal – až do roku 2012 nedal interview
+                                        sám za sebe, ale vždy se představil jako jedna ze svých postav.</p>
+                                    <p>Sasha Baron Cohen vystupuje <b> ve filmu Borat</b> v roli kazašského novináře Borata Sagdijeva,
+                                        který je „na objednávku slavného kazašského národa“ vyslán do Spojených států
+                                        amerických, aby pochytil tamější kulturu s perspektivou aplikovat ji ve své
+                                        rodné vsi. Film má formu fiktivního dokumentu a byl velmi úspěšný (stál 18 a
+                                        utržil 261 milionů dolarů). <b> Dosud je zakázaný v Rusku a celém arabském světě
+                                        (kromě Libanonu), také se stal terčem mnoha žalob.</b></p>
+                                    <img src="img/borat_umelec.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </div>
-        
+
     </div>
-        <div class="container">
+    <div class="container">
         <div id="footer" class="col-md-12 p-lg-4 col-left">
-            <footer> Vojtěch Bernard IT-2 &copy;</footer>
+            <footer> Vojtěch Bernard IT-2 &copy; <button class="button1 col-right" id="zlo" type="button">Jestli si
+                    chceš připadat, že to čteš azbukou</button></footer>
         </div>
     </div>
 
@@ -227,26 +268,32 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         // Load google charts
-        google.charts.load('current', {'packages':['corechart']});
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
         google.charts.setOnLoadCallback(drawChart);
-        
+
         // Draw the chart and set the chart values
         function drawChart() {
-          var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Islám', 70],
-          ['Křestanství', 26],
-          ['Ostatní náboženství', 4],
-        ]);
-        
-          // Optional; add a title and set the width and height of the chart
-          var options = {'title':'Náboženství v Kazachstánu', 'width':550, 'height':400};
-        
-          // Display the chart inside the <div> element with id="piechart"
-          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-          chart.draw(data, options);
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Islám', 70],
+                ['Křestanství', 26],
+                ['Ostatní náboženství', 4],
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = {
+                'title': 'Náboženství v Kazachstánu',
+                'width': 550,
+                'height': 400
+            };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
         }
-        </script>
+    </script>
 
 
     <script>
@@ -271,6 +318,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/selector.js"></script>
 </body>
 
 </html>
