@@ -1,5 +1,4 @@
-// Vytvořte pole datových objektů v platných formátech JSON (otestujte jejich validitu např. zde: https://jsonformatter.curiousconcept.com/)
-// Historické události
+
 const events = [
     {
        "year":"11. století",
@@ -57,7 +56,7 @@ const events = [
     },
  ];
 
-// Významné postavy
+
 const heroes = [
      {
       "name":"Chrám Nanebevstoupení Páně",
@@ -145,21 +144,15 @@ const heroes = [
 
 $(function(){
 
-/* Po kliknutí na některý z nadpisů h2 se střídavě zobrazí nebo zmizí blok (div) pod nadpisem */    
+
     $("h2").on("click", function(){
-        /* $(this) = selektor, který ukazuje na právě aktivní objekt, v tomto případě tedy na jeden z nadpisů h2, na který bylo kliknuto */
-        /* Následuje tzv. traverzování: */
-        /* parents(".row") - hledá mezi nadřízenými prvky (rodiči) první, který obsahuje třídu .row */
-        /* next() - ukáže na nejbližšího sourozence; v tomto případě další div */
-        /* toggle() - metoda, která střídavě skrývá|odkrývá vybrané prvky */
+
         $(this).parents(".row").next().toggle(1000);
     });
 
-/* V první části je tabulka s významnými událostmi z dějin dané země */    
-/* Data jsou do tabulky načtena z proměnné events */
-/* Všimněte si, že v bloku .event-evaluation je použit ternární operátor, který rozhoduje o zobrazení ikony + nebo -*/
+
     events.forEach((event)=>{
-        /* Metoda append() přidává nové prvky do vybrané částí stránky (vždy za už existující obsah) */
+
         $("#udalosti tbody").append(`<tr>
             <td class="event-year">${event.year}</td>
             <td>
@@ -169,69 +162,58 @@ $(function(){
         </tr>`);
     });
 
-    /* Po načtení stránky se skryjí všechny detaily událostí */
     $(".event-detail").hide();
 
-    /* Při najetí kurzoru myši na ikonu nebo odkaz dojde k následujícím akcím: */
     $(".event-name i, .event-name a").on("click", function(){
-        /* Ze všech řádků tabulky se odstraní dvě uvedené třídy */
+
         $("#udalosti tr").removeClass("modra");
-        /* Tyto dvě třídy sepřidají jen rodičovskému řádku (.parents("tr")) toho (this) prvku, na který zrovna ukázala myš */
+
         $(this).parents("tr").addClass("modra");
-        /* Nejprve zajistíme skrytí všech detailů událostí */
+
         $(".event-detail").hide();
-        /* Poté ukážeme pouze ten detail, který následuje po prvku, na který zrovna ukázala myš */
-        /* Zde je použito tzv. traverzování - metodou parent() nejprve "traverzujeme" na rodiče aktivního prvku (odstavec), 
-           poté metodou next() vybereme nejbližšího následujícího sourozence (odstavec s detailem) */
-        /* Zároveň zde, ale i na jiných místech, využíváme tzv. řetězení (chaining), kdy můžeme volat několik metod v řadě */   
+ 
         $(this).parent().next().show(500);
     });    
 
-/* Druhá část stránky obsahuje seznam slavných postav a vedle něj se po kliknutí zobrazuje karta s podrobnějším profilem osobnosti */    
-/* Nejprve jsou načtena jména osobností z proměnné heroes do seznamu upraveného pomocí tříd Bootstrapu */
+
     heroes.forEach((hero)=>{
         $("#postavy .mozna").append(`<li class="list-group-item list-group-item-action list-group-item-primary">${hero.name}</li>`);
         
     });
 
-    /* Funkce zajistí načtení dat o vybrané osobnosti a jejich správné zobrazení ve struktuře karty */
+
     function fillPersonCard(person) {
-        /* Do proměnné hero se z pole heroes načte objekt o osobnosti, která byla vyhledána podle jména */
         let hero = heroes.find(item => {return item.name === person});
-        /* Metoda html() umožnuje vložení HTML kódu (odpovídá innerHTML() v JS) */
         $(".card-header").html(`<i></i> <b>${hero.date}</b>`);
-        /* Metoda text() umožnuje vložení "holého" textu (odpovídá innerText() v JS) */
         $(".card-title").text(hero.name);
         $(".card-text").text(hero.biography);
         $(".card-footer").html(`Odkaz: <a href="${hero.online}">${hero.online}</a>`);
-        /* Vyprázdní se oblast s galerií fotek spojených s danou osobností */
         $(".gallery").empty();
-        /* V cyklu budou přidány nové bloky s fotkami osobnosti */
         for (let i = 0; i < hero.portraits.length; i++) {
             $(".gallery").append(`<div class="col-sm-4"><a href="#"><img src="./img/${hero.portraits[i]}" alt="" class="img-fluid"></a></div>`);        
         }
     }
 
-    /* Po načtení stránky bude jako aktivní označena první osobnost v seznamu */
+
     $("#postavy li:first").addClass('active');
-    /* Pomocí připravené funkce, které je předáno jméno první osobnosti, se načtou data do profilové karty */
+
     fillPersonCard(heroes[0].name);
 
-    /* Po kliknutí na jméno osobnosti v seznamu se provede následující sled akcí: */
+
     $("#postavy li").on("click", function(){
-        /* Nejprve všechny prvky seznamu zbavíme třídu active, abychom měli jistotu, že žádný z nich nebude zvýrazněn */
+
         $("#postavy li").removeClass("active");
-        /* A nyní přidáním třídy active zvýrazníme právě ten prvek (this), na který bylo kliknuto */
+
         $(this).addClass("active");        
-        /* Do proměnné person se uloží textová hodnota (tj. jméno osoby) toho (this) objektu, na který uživatel kliknul */
+
         let person = $(this).text();
-        /* Celý blok označený id portret se nejprve zaroluje a po dovršení této akce se zavolá tzv. callback funkce */
+
         $("#portret").slideUp(1000, function(){
-            /* Součástí callback funkce je změna údajů na profilové kartě podle jména aktuálně vybrané osobnosti (proměnná person) */
+
             fillPersonCard(person);
         });
-        /* Blok portret se během 1 sekundy vyroluje */
-        $("#portret").slideDown(1000);
+
+        $("#portret").slideDown(500);
     });
 
 })
