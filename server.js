@@ -6,5 +6,17 @@ const server = http.createServer(app);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = process.env.PORT || 5000;
+app.get('/api/events', (req, res) => {
+    readJSON('js/data/karta.json')
+    .then(data => res.send(data))
+    .catch(err => res.send('Chyba lávky', err));
+});
+
+app.get('/api/events/:index', (req, res) => {
+    readJSON('js/data/karta.json')
+    .then(data => res.send(data[req.params.index]))
+    .catch(err => res.send('Chyba lávky', err));
+});
+
+const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => console.log(`Server běží na portu ${PORT}`));

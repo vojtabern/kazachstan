@@ -1,0 +1,56 @@
+[
+    {
+       "year":"11. století",
+       "event":"Vstup Turkičtích kumánů do Kazachstánu",
+       "detail":"V 11. století vstoupili na území turkičtí Kumáni, kteří s dalším turkickým nomádským kmenem Kypčaky posléze vytvořili Kumánsko-Kypčackou konfederaci.",
+       "evaluation":"true"
+    },
+    {
+        "year":"13. století",
+        "event":"Vpád Čingischána do Kazachstánu",
+        "detail":"Ve 13. století vpadl do Kazachstánu Čingischán se svými hordami. Kumáni byli poraženi a oblast se stala součástí Mongolské říše. Byla opět sjednocena v 16. století, kdy vznikl územně nesmírně velký Kazašský chanát. Tehdy se také ustavila kazašská národní identita a kazaština.",
+        "evaluation":"false"
+    },
+    {
+       "year":"17. století",
+       "event":"Rozdělení Kazachstánu",
+       "detail":"V 17. století však klanová rivalita vedla k rozdělení chanátu na tři žuzy (Velký, Střední a Malý). Posléze chanát trpěl i nájezdy Čtyř Ojratů, což byla federace čtyř mongolských kmenů, z nichž nejagresivnější byli Džungarové, kteří obsadili centrální a východní oblasti země. Džungarové byli definitivně poraženi kazašským chánem Ablajem roku 1729 v bitvě u Anrakaje a Ablaj získal status národního hrdiny (batyra). Země byla opět sjednocena, avšak boji s Džungary vysílena. Toho využili nejprve povolžští Kalmykové a dobyli současný jihovýchodní Kazachstán, včetně hlavního města Almaty. Také Bucharský emirát (Uzbeci) zabral část země, včetně města Šymkent. Nakonec však oblast ovládlo Ruské impérium.",
+       "evaluation":"true"
+    },
+    {
+        "year":"18. století",
+        "event":"Nadvláda Ruska",
+        "detail":"V průběhu 18. století vybudovalo carské Rusko na své jižní hranici soustavu pevností na obranu svého území před nájezdy kazašských a džungarských nomádů, mezi nimi Omsk, Semipalatinsk, Pavlodar, Orenburg a Petropavlovsk. Na obraně hranice se podíleli také kozáci. Během Pugačovova povstání využili Kazaši chaosu a podnikali nájezdy na osady Rusů a povolžských Němců. Ablaj-chán, který byl nejmocnějším vládcem tzv. Střední hordy, udržoval s Ruskem spojenectví.",
+        "evaluation":"false"
+    },
+    {
+        "year":"polovina 19. století",
+        "event":"Povstání proti rusku",
+        "detail":"Rusové zavedli na úřadech i ve školách ruštinu. To začalo vyvolávat od 60. let 19. století značný odpor obyvatelstva. Ke konci 19. století můžeme hovořit o vzniku kazašského národního obrození, s hlavním cílem zachránit kazaštinu. Ještě větší pnutí však vzniklo, když v 90. letech 19. století začaly do země proudit davy osadníků z evropské části ruské říše. Přicházeli hlavně ruští a ukrajinští rolníci, kteří se usazovali převážně na severu země. Velkým spouštěčem další migrační vlny bylo dokončení železnice mezi Orenburgem a Taškentem v roce 1906. Počet kolonizátorů krátce poté převýšil počet původních obyvatel. Ruská vláda migraci podporovala, vládním administrátorem tohoto procesu byl Vasilij Balabanov. V roce 1916 to nakonec vyvolalo ozbrojený odpor Kazachů, kteří začali napadat vesnice kolonistů, carské vojáky a kozáky (tzv. Basmačské povstání či hnutí basmačů). Povstání pak bylo vpleteno do Ruské občanské války a basmači se postavili na stranu Bílých proti bolševikům. Nakonec bylo poraženo a Kazachstán se tak stal součástí nově vznikající sovětské říše. Basmači operovali v afghánských horách do 30. let 20. století.",
+        "evaluation":"true"
+    },
+    {
+        "year":"1925-1933",
+        "event":"Nadvláda Sovětského svazu",
+        "detail":"Jako všude jinde v Sovětském svazu bylo mnoho politických oponentů, kulaků a jiných režimu nepohodlných lidí popraveno či skončilo v kazašské stepi v pracovních táborech. Docházelo k násilné kolektivizaci, která na kazašské kočovníky, nezvyklé být upoutáni k půdě, dopadla obzvláště tíživě. Výsledkem byl mj. obří hladomor v letech 1931–1933, kdy v Kazachstánů zemřelo hlady 1,5 milionu lidí, z toho 1,3 milionu etnických Kazachů. Zemřelo tak v krátké době 38% kazašského etnika. Šlo o největší populační ztrátu jedné národnosti v celých dějinách Sovětského svazu.",
+        "evaluation":"false"
+    },
+    {
+        "year":"1947",
+        "event":"Jaderný + vesmírný program Sovětského Svazu",
+        "detail":"Po válce, v roce 1947, vznikl v oblasti u Semeje zkušební jaderný polygon. Právě zde byla v roce 1949 vyzkoušena první sovětská jaderná bomba. V této oblasti byly do roku 1989 provedeny stovky jaderných testů. V roce 1955 vznikla v Kazachstánu známá kosmická základna Bajkonur, ze které vystartovala první umělá družice světa Sputnik 1, první kosmonaut Jurij Gagarin i kosmická stanice Mir.[15] V 50. a 60. letech byly z popudu sovětského vůdce Nikity Chruščova obrovské plochy neobdělávaných pastvin (celiny) přeměněny na ornou půdu. Tento projekt měl z Kazachstánu udělat obilnici SSSR. Dopad tohoto projektu na místní ekologickou rovnováhu byl katastrofální. Na konci 50. let se také zdálo, že rusifikační politika zvítězila: v roce 1959 se Kazaši stali menšinou, tvořili již jen 30% populace, zatímco etničtí Rusové 43%.",
+        "evaluation":"false"
+    },
+    {
+        "year":"1986",
+        "event":"Protesty proti Sovětskému svazu",
+        "detail":" V prosinci 1986 se v Almaty uskutečnily masové demonstrace mladých Kazachů, které byly později nazvány Želtoksan (Prosinec). Šlo o protest proti nahrazení prvního tajemníka Komunistické strany Kazašské SSR Dinmuchameda Konajeva Genadijem Kolbinem. Protože Konajev byl Kazach a Kolbin Rus, který navíc v Kazachstánu nikdy nežil, měl protest rovněž jistý nacionální aspekt (jinak ovšem byl Konajev komunista brežněvovské linie a Michail Gorbačov ho odstranil v roce 1986 kvůli obviněním z korupce). Vládní jednotky nepokoje potlačily, několik lidí bylo zabito a mnoho demonstrantů uvězněno.",
+        "evaluation":"false"
+    },
+    {
+        "year":"1991",
+        "event":"Nezávislost",
+        "detail":"Kazachstán vyhlásil nezávislost 16. prosince 1991, když se SSSR v té době již de facto rozpadl na patnáct nástupnických států. Ze všech patnácti vyhlásil Kazachstán svou nezávislost jako poslední. Téhož roku se stal členem Společenství nezávislých států. Prezidentské volby v roce 1991 vyhrál bývalý vůdce místní komunistické strany Nursultan Nazarbajev. Hlavním městem se stala v roce 1997 Astana",
+        "evaluation":"false"
+    }
+ ]
