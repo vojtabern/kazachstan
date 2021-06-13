@@ -1,0 +1,29 @@
+[
+    {
+        "name":"Aqmola",
+        "historie":"Akmolská oblast (kazašsky Ақмола облысы, rusky Акмолинская область) je oblast na severu Kazachstánu. Byla založena 14. října 1939 v rámci Kazašské SSR. V letech 1961–92 se jmenovala Celinogradská oblast a pod tímto názvem byla v letech 1962–64 součástí Celinného kraje. Má rozlohu 147 000 km². Má 748 200 obyvatel (2004). Hlavním městem je Kokčetau.Oblast hraničí se čtyřmi oblastmi Kazachstánu (Kostanajskou na západě, Severokazachstánskou na severu, Pavlodarskou na východě a Karagandskou na jihu) a na jejím území leží hlavní město Nur-Sultan.",
+        "portraits":[
+           "chram-01.jpg",
+           "chram-02.jpg"
+        ],
+        "online":"https://cs.wikipedia.org/wiki/Akmolsk%C3%A1_oblast"
+    },  
+    {
+        "name":"kokos",
+        "historie":"Chrám byl postaven v letech 1904 až 1907 podle plánů známého ruského architekta A. P. Zenkova. Sloužil a slouží početné komunitě pravoslavných křesťanů, kteří žijí v kazašské metropoli. V letech 1927 až 1995 byl násilně odňat pravoslavné církvi a využíván pro jiné účely (muzeum, výstavní a koncertní síň). V roce 1995 ho prezident Nursultan Nazarbajev vrátil původnímu vlastníku. V současnosti se zde denně konají pravoslavné liturgie. Chrám je vyobrazen i na kazašské minci v hodnotě 500 tenge a také na poštovní známce z roku 2003. Je zařazen mezi státní a kulturní památky země.",
+        "portraits":[
+           "chram-01.jpg",
+           "chram-02.jpg"
+        ],
+        "online":"https://cs.wikipedia.org/wiki/Chr%C3%A1m_Nanebevstoupen%C3%AD_P%C3%A1n%C4%9B_(Almaty)"
+    },
+    {
+        "name":"Chrám Nanebevstoupení Páně",
+        "historie":"Chrám byl postaven v letech 1904 až 1907 podle plánů známého ruského architekta A. P. Zenkova. Sloužil a slouží početné komunitě pravoslavných křesťanů, kteří žijí v kazašské metropoli. V letech 1927 až 1995 byl násilně odňat pravoslavné církvi a využíván pro jiné účely (muzeum, výstavní a koncertní síň). V roce 1995 ho prezident Nursultan Nazarbajev vrátil původnímu vlastníku. V současnosti se zde denně konají pravoslavné liturgie. Chrám je vyobrazen i na kazašské minci v hodnotě 500 tenge a také na poštovní známce z roku 2003. Je zařazen mezi státní a kulturní památky země.",
+        "portraits":[
+           "chram-01.jpg",
+           "chram-02.jpg"
+        ],
+        "online":"https://cs.wikipedia.org/wiki/Chr%C3%A1m_Nanebevstoupen%C3%AD_P%C3%A1n%C4%9B_(Almaty)"
+    }
+]
