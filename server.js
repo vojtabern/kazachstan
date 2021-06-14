@@ -18,5 +18,5 @@ app.get('/api/events/:index', (req, res) => {
     .catch(err => res.send('Chyba lávky', err));
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5050;
 server.listen(PORT, () => console.log(`Server běží na portu ${PORT}`));
